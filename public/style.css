@@ -27,7 +27,7 @@ input {
     margin: 0;
     border: none;
     border-radius: 0;
-    width: 75%;
+    width: 70%;
     padding: .5rem;
     font-size: 1.1rem;
     outline: none;
@@ -37,8 +37,8 @@ input {
 }
 
 button {
-    padding: .6rem;
-    width: 23%;
+    padding: .59rem;
+    width: 25%;
     background-color: #202024;
     color: rgb(109, 109, 109);
     text-align: center;
@@ -50,6 +50,49 @@ button {
     transition: all .3s ease-in-out;
     /* faz uma transição no botão */
 }
+
+@media(max-width: 500px){
+    button{
+        padding: .59rem;
+        width: auto;
+        background-color: #202024;
+        color: rgb(109, 109, 109);
+        text-align: center;
+        font-size: 1rem;
+        cursor: pointer;
+        border-radius: 0;
+        border: none;
+        outline: none;
+        transition: all .3s ease-in-out;
+        /* faz uma transição no botão */
+        margin-top: 1rem;
+    }
+
+    input {
+        margin: 0;
+        border: none;
+        border-radius: 0;
+        width: 80%;
+        padding: .5rem;
+        font-size: 1.1rem;
+        outline: none;
+        /* remove a linha de baixo ao clicar dentro */
+        background-color: #202024;
+        color: #fff;
+    }
+
+    header {
+        background-color: #005290;
+        padding: 2rem;
+        margin: .5rem;
+        text-align: center;
+    }
+
+    header h1 {
+        padding-bottom: 1rem;
+    }
+
+   }
 
 button:hover {
     background-color: #004e14;

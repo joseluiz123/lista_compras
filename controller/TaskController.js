@@ -27,14 +27,14 @@ const createTask = async (req, res) => {
     const task = req.body;
 
     if (!task.task) {
-        message = "Insira uma texto antes de adicionar a tarefa!"
+        message = "Insira uma texto antes de adicionar o item!"
         type = "danger"
         return res.redirect("/")
     }
 
     try {
         await Task.create(task)
-        message = "Tarefa criada com sucesso"
+        message = "Item adicionado com sucesso"
         type = "success"
         return res.redirect("/")
     } catch (err) {
@@ -63,7 +63,7 @@ const updateOneTask = async (req, res) => {
     try {
         const task = req.body
         await Task.updateOne({ _id: req.params.id }, task)
-        message = "Tarefa atualizada com sucesso"
+        message = "Item atualizada com sucesso!"
         type = "success"
         res.redirect("/")
     } catch (err) {
@@ -76,7 +76,7 @@ const deleteOneTask = async (req, res) => {
 
     try {
         await Task.deleteOne({ _id: id })
-        message = "Tarefa apagada com sucesso"
+        message = "Item apagado com sucesso"
         type = "success"
         res.redirect("/")
     } catch (err) {

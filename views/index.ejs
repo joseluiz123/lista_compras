@@ -23,13 +23,13 @@
                 <% if (task==null) { %>
                     <h1>LISTA DE COMPRAS</h1>
                     <form action="/create" method="post">
-                        <input type="text" name="task" id="task" placeholder="Insira uma tarefa" onfocus="this.selectionStart = this.selectionEnd = this.value.length;"  
+                        <input type="text" name="task" id="task" placeholder="Insira um item" onfocus="this.selectionStart = this.selectionEnd = this.value.length;"  
                         autofocus="true">
                         <button type="submit" id="addButton">Adicionar</button>
 
                     </form>
                     <% } else { %>
-                        <h1>Editar Tarefa</h1>
+                        <h1>Editar Item</h1>
                         <form action="/updateOne/<%= task._id %>" method="POST">
                             <input type="text" name="task" id="task" value="<%= task.task %>">
                             <button type="submit" id="updateButton">Atualizar</button>
@@ -65,7 +65,7 @@
                             <a id="close" href="/"><i class="bi bi-x"></i></a>
                         </div>
                         <hr>
-                        <p>Deseja apagar a tarefa "<%= taskDelete.task %>"?</p>
+                        <p>Deseja apagar o item "<%= taskDelete.task %>"?</p>
                         <div id="btns">
                             <a id="btn-not" href="/">Não</a>
                             <a id="btn-yes" href="/deleteOne/<%= taskDelete._id %>">Sim</a>
