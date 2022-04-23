@@ -1,4 +1,4 @@
-require('dotenv').config()//cria e envia as variáveis de ambiente para poder fazer o deploy para o heroku
+require('dotenv').config() //cria e envia as variáveis de ambiente para poder fazer o deploy para o heroku
 const express = require("express")
 const path = require("path")
 const routes = require("./routes/routes")
