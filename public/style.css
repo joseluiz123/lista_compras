@@ -53,7 +53,7 @@ button {
 
 @media(max-width: 500px){
     button{
-        padding: .59rem;
+        padding: .58rem;
         width: auto;
         background-color: #202024;
         color: rgb(109, 109, 109);
