@@ -17,9 +17,8 @@ app.listen(port, () => {
     console.log(`Servidor rodando em http://localhost:${port}`)
 })
 
-/* const os = require("os")
 
-console.log(os.hostname()) */
+
 
 
 
