@@ -3,6 +3,10 @@ const Task = require("../models/Task")
 let message = ""
 let type = ""
 
+const os = require("os") //não existia
+nameSystem = os.hostname()
+console.log(nameSystem)
+
 const getAllTasks = async (req, res) => {
     try {
         setTimeout(() => {
@@ -15,7 +19,8 @@ const getAllTasks = async (req, res) => {
             task: null,
             taskDelete: null,
             message,
-            type
+            type,
+            nameSystem //não existia
         })
 
     } catch (err) {
