@@ -21,7 +21,7 @@ const onRequest = () => {
 
 app.listen(port, () => {
     console.log(`Servidor rodando em http://localhost:${port}`)
-    setInterval(() => console.log(' hey')) //não existia
+    setInterval(() => console.log(' hey')) //não existia 
 })
 
 
