@@ -13,15 +13,8 @@ app.use(express.static(path.join(__dirname, "public")))
 app.use(express.urlencoded())
 app.use(routes)
 
-//não existia
-const onRequest = () => {
-    setInterval(() => console.log(' hey'))
-    }
-    
-
 app.listen(port, () => {
     console.log(`Servidor rodando em http://localhost:${port}`)
-    setInterval(() => console.log(' hey')) //não existia 
 })
 
 
