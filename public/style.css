@@ -51,7 +51,7 @@ button {
     /* faz uma transição no botão */
 }
 
-@media(max-width: 500px){
+@media(max-width: 560px){
     button{
         padding: .58rem;
         width: auto;
